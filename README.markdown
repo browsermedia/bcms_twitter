@@ -51,3 +51,7 @@ end
 ```
 
 This file should be ignored by git, so you can test with your own account.
+
+## Acknowledgements
+
+This is a port of a [module created by heimdull](https://github.com/heimdull/bcms_twitter_module) which has been upgraded to be compatible with BrowserCMS 3.3.x.
