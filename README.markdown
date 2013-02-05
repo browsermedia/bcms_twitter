@@ -36,12 +36,12 @@ Add the portlet to a page, specifying the Twitter account to display tweets from
 
 Default template is configurable through the UI. No initial styling is provided.
 
-## Testing
+## Contributing
 
-In order to test this module, you will need to have a Twitter Application with the following information in a new initializer:
+If you want to setup and work on this module, in order to run tests you will have to setup/configue a Twitter app with the following information in a new initializer:
 
 ```
-# config/initializers/twitter.rb
+# config/initializers/bcms_twitter_account.rb
 Twitter.configure do |config|
   config.consumer_key = YOUR_CONSUMER_KEY
   config.consumer_secret = YOUR_CONSUMER_SECRET
@@ -49,3 +49,5 @@ Twitter.configure do |config|
   config.oauth_token_secret = YOUR_OAUTH_TOKEN_SECRET
 end
 ```
+
+This file should be ignored by git, so you can test with your own account.
