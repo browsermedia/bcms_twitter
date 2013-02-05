@@ -38,7 +38,7 @@ Default template is configurable through the UI. No initial styling is provided.
 
 ## Contributing
 
-If you want to setup and work on this module, in order to run tests you will have to setup/configue a Twitter app with the following information in a new initializer:
+If you want to setup and work on this module, in order to run tests you will have to setup/configure a Twitter app with the following information in a new initializer:
 
 ```
 # config/initializers/bcms_twitter_account.rb
