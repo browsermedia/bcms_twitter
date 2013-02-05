@@ -40,6 +40,7 @@ Default template is configurable through the UI. No initial styling is provided.
 
 In order to test this module, you will need to have a Twitter Application with the following information in a new initializer:
 
+```
 # config/initializers/twitter.rb
 Twitter.configure do |config|
   config.consumer_key = YOUR_CONSUMER_KEY
@@ -47,3 +48,4 @@ Twitter.configure do |config|
   config.oauth_token = YOUR_OAUTH_TOKEN
   config.oauth_token_secret = YOUR_OAUTH_TOKEN_SECRET
 end
+```
