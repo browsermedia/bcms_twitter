@@ -1,0 +1,10 @@
+<section class="twitter-timeline">
+  <span class="wrapper">
+    <h3><%= @title %></h3>
+  </span>
+  <ul class="tweets">
+    <% @items.each do |item| %>
+    <li><%= item.text %> <small><%= time_ago_in_words(item.created_at) %> ago</small></li>
+    <% end %>
+  </ul>
+</section>

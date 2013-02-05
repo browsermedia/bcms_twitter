@@ -8,4 +8,4 @@ db/schema.rb
 .dotest
 tmp/restart.txt
 public/cache
-Gemfile.lock
+config/initializers/bcms_twitter_account.rb
