@@ -10,10 +10,13 @@ Gem::Specification.new do |spec|
   spec.author = "BrowserMedia" 
   spec.email = "github@browsermedia.com" 
   spec.homepage = "http://www.github.com/browsermedia/bcms_twitter"
-  spec.files = Dir["{app,config,db,lib}/**/*"]
+  spec.files = Dir["{app,db/migrate,lib}/**/*"]
   spec.files -= Dir["app/views/layouts/templates/default.html.erb"]
-  spec.files -= Dir["db/migrate/*_browsercms_*.rb"]
+  spec.files -= Dir["db/migrate/*_browsercms*.rb"]
   spec.files -= Dir["lib/tasks/build_gem.rake"]
+  spec.files -= Dir["app/controllers/application_controller.rb"]
+  spec.files -= Dir["app/helpers/application_helper.rb"]
+  spec.files -= Dir["app/views/layouts/application.html.erb"]
   spec.files += Dir["public/bcms/twitter/**/*"]
 
   spec.files += Dir["Gemfile", "LICENSE.txt", "COPYRIGHT.txt", "GPL.txt" ]

@@ -8,16 +8,16 @@ class BcmsTwitter::InstallGenerator < Cms::ModuleInstallation
 
   def generate_twitter_configuration
     create_file "config/initializers/bcms_twitter_configuration.rb" do 
-      """
-      # Create a twitter client account for your site here: http://dev.twitter.com/apps/new
-      # Then fill in the values below.
-      Twitter.configure do |config|
-        config.consumer_key = "YOUR_CONSUMER_KEY"
-        config.consumer_secret = "YOUR_CONSUMER_SECRET"
-        config.oauth_token = "YOUR_OAUTH_TOKEN"
-        config.oauth_token_secret = "YOUR_OAUTH_TOKEN_SECRET"
-      end     
-      """
+<<-RUBY_CODE
+# Create a twitter client account for your site here: http://dev.twitter.com/apps/new
+# Then fill in the values below.
+Twitter.configure do |config|
+  config.consumer_key = "YOUR_CONSUMER_KEY"
+  config.consumer_secret = "YOUR_CONSUMER_SECRET"
+  config.oauth_token = "YOUR_OAUTH_TOKEN"
+  config.oauth_token_secret = "YOUR_OAUTH_TOKEN_SECRET"
+end     
+RUBY_CODE
       
     end
   end
